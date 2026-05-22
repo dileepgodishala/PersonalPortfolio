@@ -67,6 +67,7 @@
     position: relative;
     overflow: hidden;
   }
+  
 
   .hero::after {
     content: 'QA';
@@ -86,7 +87,7 @@
 
   .hero-label {
     font-family: 'DM Mono', monospace;
-    font-size: 11px;
+    font-size: 20px;
     letter-spacing: 0.25em;
     color: var(--accent);
     text-transform: uppercase;
@@ -218,29 +219,32 @@
     letter-spacing: -0.02em;
   }
 
-    .download-btn {
+  .download-btn {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 8px;
-    background: var(--accent);
-    border: none;
-    border-radius: 4px;
-    padding: 10px 16px;
+    background-color: #00b894;
+    padding: 12px 20px;
+    border-radius: 8px;
+    
+    color: white !important;
+    text-decoration: none !important;
+
     font-family: 'Syne', sans-serif;
-    font-size: 11px;
+    font-size: 13px;
     font-weight: 700;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: var(--bg);
-    text-decoration: none;
-    cursor: pointer;
-    transition: background 0.2s, transform 0.2s;
-  }
 
-  .download-btn:hover {
-    background: var(--accent2);
+    transition: all 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #00d1a0;
     transform: translateY(-2px);
-  }
+    color: white !important;
+}
 
   .nav-logo span { color: var(--accent); }
 
@@ -252,7 +256,7 @@
 
   .nav-links a {
     font-family: 'DM Mono', monospace;
-    font-size: 11px;
+    font-size: 14px;
     letter-spacing: 0.12em;
     text-transform: uppercase;
     color: var(--text-muted);
